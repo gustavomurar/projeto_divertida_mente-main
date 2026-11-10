@@ -1,0 +1,55 @@
+/* Posiciona o ícone dentro do card e em cima da imagem */
+.item {
+    position: relative; /* Faz com que o ícone seja posicionado em relação ao card */
+  }
+  
+  .icons {
+    position: absolute;
+    top: 10px; /* Ajusta a posição para que o ícone fique no topo do card */
+    right: 200px; /* Fica no canto superior direito */
+    z-index: 10;
+    color: black;
+  }
+  
+  .icons i {
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .icons i:hover {
+    color: #f39c12;
+  }
+  
+  .imagem-item {
+    margin-top: 50px; /* Ajuste para afastar a imagem do topo, se necessário */
+  }
+  
+  .imagem-produto {
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+  }
+  .informacoes {
+    margin-top: 25px; 
+  }
+
+  .sexo-options {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .sexo-options span {
+    margin: 0 8px;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sexo-options span:hover {
+    background-color: #ccc;
+  }
+  

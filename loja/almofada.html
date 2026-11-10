@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divertidamente</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cards.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="responsivo.css" />
+  <script src="loja.js" defer></script>
+  <script src="mobile-navbar.js" defer></script>
+</head>
+<body>
+<header>
+  <nav>
+    <a class="logo" href="/">DIVERTIDAMENTE</a>
+    <div class="mobile-menu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-list">
+      <li><a href="../home2.html">Início</a></li>
+      <li><a href="camisa.html">Camisa</a></li>
+        <li><a href="moletom.html">Moletom</a></li>
+        <li><a href="ecobag.html">Ecobag</a></li>
+        <li><a href="almofada.html">Almofada</a></li>
+        <li><a href="caneca.html">Caneca</a></li>
+        <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a href="favoritos.html"><i class="fa-solid fa-heart"></i></a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <div class="principal">
+      <h1>CAPAS DE ALMOFADA</h1>
+    </div>
+    <div class="container">
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada preta alegria.png" alt="almofada Alegria" class="imagem-produto"/>
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Alegria Preta', 'almofada/imagens/almofada preta alegria.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Alegria Preta" onclick="favoritar('Almofada Alegria Preta', 'almofada/imagens/almofada preta alegria.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Alegria</h1>
+          <p>almofada preta Alegria.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/alegria.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada branca alegria.png" alt="almofada Alegria" class="imagem-produto"/>
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Alegria Branca', 'almofada/imagens/almofada branca alegria.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Alegria Branca" onclick="favoritar('Almofada Alegria Branca', 'almofada/imagens/almofada branca alegria.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Alegria</h1>
+          <p>almofada branca Alegria.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/alegriab.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada preta ansiedade.png" alt="almofada Ansiedade" class="imagem-produto"
+            data-original="almofada/imagens/almofada preta ansiedade.png" data-m="almofada/imagens/almofada-f-ansiedade.png" data-h="almofada/imagens/almofada-m-ansiedade.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Ansiedade Preta', 'almofada/imagens/almofada preta ansiedade.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Ansiedade Preta" onclick="favoritar('Almofada Ansiedade Preta', 'almofada/imagens/almofada preta ansiedade.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Ansiedade</h1>
+          <p>almofada preta Ansiedade.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/ansiedade.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada branca ansiedade.png" alt="almofada Ansiedade" class="imagem-produto"
+            data-original="almofada/imagens/almofada branca ansiedade.png" data-m="almofada/imagens/almofada-f-ansiedadeb.png" data-h="almofada/imagens/almofada-m-ansiedadeb.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Ansiedade Branca', 'almofada/imagens/almofada branca ansiedade.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Ansiedade Branca" onclick="favoritar('Almofada Ansiedade Branca', 'almofada/imagens/almofada branca ansiedade.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Ansiedade</h1>
+          <p>almofada branca Ansiedade.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/ansiedadeb.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada preta inveja.png" alt="almofada Inveja" class="imagem-produto"
+            data-original="almofada/imagens/almofada preta inveja.png" data-m="almofada/imagens/almofada-f-inveja.png" data-h="almofada/imagens/almofada-m-inveja.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Inveja Preta', 'almofada/imagens/almofada preta inveja.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Inveja Preta" onclick="favoritar('Almofada Inveja Preta', 'almofada/imagens/almofada preta inveja.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Inveja</h1>
+          <p>almofada preta Inveja.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/inveja.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada branca inveja.png" alt="almofada Inveja" class="imagem-produto"
+            data-original="almofada/imagens/almofada branca inveja.png" data-m="almofada/imagens/almofada-f-invejab.png" data-h="almofada/imagens/almofada-m-invejab.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Inveja Branca', 'almofada/imagens/almofada branca inveja.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Inveja Branca" onclick="favoritar('Almofada Inveja Branca', 'almofada/imagens/almofada branca inveja.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Inveja</h1>
+          <p>almofada branca Inveja.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/invejab.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada preta medo.png" alt="almofada Medo" class="imagem-produto"
+            data-original="almofada/imagens/almofada preta medo.png" data-m="almofada/imagens/almofada-f-medo.png" data-h="almofada/imagens/almofada-m-medo.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Medo Preta', 'almofada/imagens/almofada preta medo.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Medo Preta" onclick="favoritar('Almofada Medo Preta', 'almofada/imagens/almofada preta medo.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Medo</h1>
+          <p>almofada preta Medo.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/medo.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada branca medo.png" alt="almofada Medo" class="imagem-produto"
+            data-original="almofada/imagens/almofada branca medo.png" data-m="almofada/imagens/almofada-f-medob.png" data-h="almofada/imagens/almofada-m-medob.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Medo Branca', 'almofada/imagens/almofada branca medo.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Medo Branca" onclick="favoritar('Almofada Medo Branca', 'almofada/imagens/almofada branca medo.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Medo</h1>
+          <p>almofada branca Medo.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/medob.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada preta nojo.png" alt="almofada Nojo" class="imagem-produto"
+            data-original="almofada/imagens/almofada preta nojo.png" data-m="almofada/imagens/almofada-f-nojo.png" data-h="almofada/imagens/almofada-m-nojo.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Nojo Preta', 'almofada/imagens/almofada preta nojo.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Nojo Preta" onclick="favoritar('Almofada Nojo Preta', 'almofada/imagens/almofada preta nojo.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Nojo</h1>
+          <p>almofada preta Nojo.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/nojo.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada branca nojo.png" alt="almofada Nojo" class="imagem-produto"
+            data-original="almofada/imagens/almofada branca nojo.png" data-m="almofada/imagens/almofada-f-nojob.png" data-h="almofada/imagens/almofada-m-nojob.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Nojo Branca', 'almofada/imagens/almofada branca nojo.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Nojo Branca" onclick="favoritar('Almofada Nojo Branca', 'almofada/imagens/almofada branca nojo.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Nojo</h1>
+          <p>almofada branca Nojo.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/nojob.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada preta raiva.png" alt="almofada Raiva" class="imagem-produto"
+            data-original="almofada/imagens/almofada preta raiva.png" data-m="almofada/imagens/almofada-f-raiva.png" data-h="almofada/imagens/almofada-m-raiva.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Raiva Preta', 'almofada/imagens/almofada preta raiva.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Raiva Preta" onclick="favoritar('Almofada Raiva Preta', 'almofada/imagens/almofada preta raiva.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Raiva</h1>
+          <p>almofada preta Raiva.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/raiva.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada branca raiva.png" alt="almofada Raiva" class="imagem-produto"
+            data-original="almofada/imagens/almofada branca raiva.png" data-m="almofada/imagens/almofada-f-raivab.png" data-h="almofada/imagens/almofada-m-raivab.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Raiva Branca', 'almofada/imagens/almofada branca raiva.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Raiva Branca" onclick="favoritar('Almofada Raiva Branca', 'almofada/imagens/almofada branca raiva.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Raiva</h1>
+          <p>almofada branca Raiva.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/raivab.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada preta tedio.png" alt="almofada Tèdio" class="imagem-produto"
+            data-original="almofada/imagens/almofada preta tedio.png" data-m="almofada/imagens/almofada-f-tedio.png" data-h="almofada/imagens/almofada-m-tedio.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Tédio Preta', 'almofada/imagens/almofada preta tedio.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Tédio Preta" onclick="favoritar('Almofada Tédio Preta', 'almofada/imagens/almofada preta tedio.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Tédio</h1>
+          <p>almofada preta Tédio.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/tedio.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada branca tedio.png" alt="almofada Tédio" class="imagem-produto"
+            data-original="almofada/imagens/almofada branca tedio.png" data-m="almofada/imagens/almofada-f-tediob.png" data-h="almofada/imagens/almofada-m-tediob.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Tédio Branca', 'almofada/imagens/almofada branca tedio.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Tédio Branca" onclick="favoritar('Almofada Tédio Branca', 'almofada/imagens/almofada branca tedio.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Tédio</h1>
+          <p>almofada branca Tédio.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/tediob.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada preta tristeza.png" alt="almofada Tristeza" class="imagem-produto"
+            data-original="almofada/imagens/almofada preta tristeza.png" data-m="almofada/imagens/almofada-f-tristeza.png" data-h="almofada/imagens/almofada-m-tristeza.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Tristeza Preta', 'almofada/imagens/almofada preta tristeza.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Tristeza Preta" onclick="favoritar('Almofada Tristeza Preta', 'almofada/imagens/almofada preta tristeza.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Tristeza</h1>
+          <p>almofada preta Tristeza.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/tristeza.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada branca tristeza.png" alt="almofada tristeza" class="imagem-produto"
+            data-original="almofada/imagens/almofada branca tristeza.png" data-m="almofada/imagens/almofada-f-tristezab.png" data-h="almofada/imagens/almofada-m-tristezab.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Tristeza Branca', 'almofada/imagens/almofada branca tristeza.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Tristeza Branca" onclick="favoritar('Almofada Tristeza Branca', 'almofada/imagens/almofada branca tristeza.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Tristeza</h1>
+          <p>almofada branca Tristeza.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/tristezab.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada preta vergonha.png" alt="almofada Vergonha" class="imagem-produto"
+            data-original="almofada/imagens/almofada preta vergonha.png" data-m="almofada/imagens/almofada-f-vergonha.png" data-h="almofada/imagens/almofada-m-vergonha.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Vergonha Preta', 'almofada/imagens/almofada preta vergonha.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Vergonha Preta" onclick="favoritar('Almofada Vergonha Preta', 'almofada/imagens/almofada preta vergonha.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Vergonha</h1>
+          <p>almofada preta Vergonha.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/vergonha.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="almofada/imagens/almofada branca vergonha.png" alt="almofada vergonha" class="imagem-produto"
+            data-original="almofada/imagens/almofada branca vergonha.png" data-m="almofada/imagens/almofada-f-vergonhab.png" data-h="almofada/imagens/almofada-m-vergonhab.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Almofada Vergonha Branca', 'almofada/imagens/almofada branca vergonha.png', 'R$29,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Almofada Vergonha Branca" onclick="favoritar('Almofada Vergonha Branca', 'almofada/imagens/almofada branca vergonha.png', 'R$29,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Vergonha</h1>
+          <p>almofada branca Vergonha.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+           
+          </div>
+          <div class="product-price">R$29,90</div>
+          <div class="botao">
+            <button><a href="almofada/vergonhab.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-emocao">
+    <div class="container-footer">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="#">Telefone: (00) 00000-0000</a></li>
+                    <li><a href="#">Fulano@gmail.com</a></li>
+
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Endereço</h4>
+                <ul>
+                    <li><a href="#">Joinville-SC</a></li>
+                    <li><a href="#">bairro fulano 00, Rua detal</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contribuidores</h4>
+                <ul>
+                    <li><a href="#">Maria Helena</a></li>
+                    <li><a href="#">Gustavo</a></li>
+
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Nos siga</h4>
+                <div class="social-links">
+                    <ul>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

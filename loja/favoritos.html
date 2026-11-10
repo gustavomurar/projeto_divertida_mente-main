@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favoritos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="responsivo.css">
+  <script src="mobile-navbar.js" defer></script>
+  <script src="favoritos.js" defer></script>
+</head>
+<body>
+  <header>
+  <nav>
+    <a class="logo" href="/">DIVERTIDAMENTE</a>
+    <div class="mobile-menu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-list">
+        <li><a href="../home2.html">Início</a></li>
+        <li><a href="camisa.html">Camisa</a></li>
+        <li><a href="moletom.html">Moletom</a></li>
+        <li><a href="ecobag.html">Ecobag</a></li>
+        <li><a href="almofada.html">Almofada</a></li>
+        <li><a href="caneca.html">Caneca</a></li>
+        <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a href="favoritos.html"><i class="fa-solid fa-heart"></i></a></li>
+    </ul>
+  </nav>
+</header>
+
+  <h1 class="titulo">MEUS FAVORITOS <i class="fa-regular fa-heart"></i></h1>
+  <main class="main-section container">
+    <div id="favoritos-list" class="product-list"></div>
+    <div class="favoritos-total-container"><strong>TOTAL:</strong> <span id="favoritos-total">R$0,00</span></div>
+    <div class="favoritos-actions"><button id="clear-favorites-button">Remover todos os favoritos</button></div>
+  </main>
+</body>
+</html>

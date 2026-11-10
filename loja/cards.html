@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divertidamente</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cards.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <script src="mobile-navbar.js"></script>
+
+  <header>
+    <nav>
+      <a class="logo" href="/">DIVERTIDAMENTE</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+          <li><a href="#">Início</a></li>
+          <li><a href="loja/camisa.html">Camisa</a></li>
+          <li><a href="loja/moletom.html">Moletom</a></li>
+          <li><a href="loja/ecobag.html">Ecobag</a></li>
+          <li><a href="loja/almofada.html">Almofada</a></li>
+          <li><a href="loja/caneca.html">Caneca</a></li>
+          <li><a href="loja/carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a href="loja/favoritos.html"><i class="fa-solid fa-heart"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Produto 1 -->
+    <div class="item">
+      <div class="imagem-item">
+        <img src="imagem/moletom-teste.png" alt="Moletom Alegria"
+          data-original="imagem/moletom-teste.png"
+          data-m="imagem/moletom-m.png"
+          data-h="imagem/moletom-h.png"
+          class="imagem-produto" />
+        <div class="icons">
+          <i class="fa-solid fa-bag-shopping" onclick="adicionarCarrinho('Moletom Alegria', 'imagem/moletom-teste.png', 'R$69,99')"></i>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+      <div class="informacoes">
+        <h1>MOLETOM PRETO - ALEGRIA</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="sexo-options">
+          SEXO:
+          <span onmouseover="mudarSexo(this, 'm')" onmouseout="restaurarImagem(this)">M</span>
+          <span onmouseover="mudarSexo(this, 'h')" onmouseout="restaurarImagem(this)">H</span>
+        </div>
+        <div class="preco">R$69,99</div>
+      </div>
+    </div>
+
+    <!-- Produto 2 -->
+    <div class="item">
+      <div class="imagem-item">
+        <img src="imagem/moletom-x.png" alt="Moletom Tristeza"
+          data-original="imagem/moletom-x.png"
+          data-m="imagem/moletom-x-m.png"
+          data-h="imagem/moletom-x-h.png"
+          class="imagem-produto" />
+        <div class="icons">
+          <i class="fa-solid fa-bag-shopping" onclick="adicionarCarrinho('Moletom Tristeza', 'imagem/moletom-x.png', 'R$79,99')"></i>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+      <div class="informacoes">
+        <h1>MOLETOM PRETO - TRISTEZA</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="sexo-options">
+          SEXO:
+          <span onmouseover="mudarSexo(this, 'm')" onmouseout="restaurarImagem(this)">M</span>
+          <span onmouseover="mudarSexo(this, 'h')" onmouseout="restaurarImagem(this)">H</span>
+        </div>
+        <div class="preco">R$79,99</div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <footer class="footer">
+    <div class="container-footer">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="#">Telefone: (00) 00000-0000</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Endereço</h4>
+          <ul>
+            <li><a href="#">Joinville-SC</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function mudarSexo(elemento, sexo) {
+      const img = elemento.closest(".item").querySelector("img");
+      img.src = img.dataset[sexo];
+    }
+
+    function restaurarImagem(elemento) {
+      const img = elemento.closest(".item").querySelector("img");
+      img.src = img.dataset.original;
+    }
+
+    function adicionarCarrinho(nome, imagem, preco) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const existente = cart.find(item => item.name === nome);
+      if (existente) {
+        existente.quantity += 1;
+      } else {
+        cart.push({ name: nome, image: imagem, price: preco, quantity: 1 });
+      }
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert(`${nome} adicionado ao carrinho!`);
+    }
+  </script>
+</body>
+
+</html>

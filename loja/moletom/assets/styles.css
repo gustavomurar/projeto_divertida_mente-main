@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.tamanho {
+  margin-top: 10px;
+  margin-bottom: -30px;
+}
+.preco {
+  margin-top: -50px;
+}
+.sizes {
+  display: flex;
+  margin-top: 30px;
+  gap: 5px;
+}
+
+.sizes button {
+  width: 50px;
+  border-radius: 50px;
+  height: 30px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.sizes button:hover {
+  background-color: #200035;
+  transition: 0.7s ease;
+  color: #fff;
+}
+
+
+
+.botoes-compra {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.botoes-compra button {
+  width: 250px;
+  height: 40px;
+  border: #200035 solid 2px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 1rem;
+  font-weight: 600;
+  transition: 1s ease;
+
+}
+
+.botao-compra {
+  background-color: #200035;
+  color: #f9f9f9;
+  transition: 1s ease;
+}
+
+.botao-compra:hover {
+  background-color: #200035ae;
+  color: #000;
+}
+
+.button:hover {
+  background-color: #200035;
+  color: #f9f9f9;
+}
+
+
+
+.cart {
+  margin: 25px 50px;
+  float: right;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+
+  text-align: center;
+  background-color: white;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart p {
+  margin-top: 10px;
+  font-size: 1rem;
+  margin-left: 20px;
+
+  width: 60px;
+}
+
+.product-info p {
+  margin-top: 30px;
+  font-weight: 350;
+  font-size: 1rem;
+  color: #333333d7;
+}
+
+.product-info ul {
+  margin-top: 30px;
+  font-weight: 350;
+  font-size: 1rem;
+  color: #333333d7;
+}
+
+
+.gender-circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+  border-radius: 50%;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.gender-circle:hover {
+  background-color: #200035;
+  color: #f9f9f9;
+  transition: .5s ease;
+}
+
+
+
+.imagem-item {
+  position: relative;
+}
+
+.disabledButton {
+  background-color: #d8d8d8;
+  cursor: not-allowed;
+}
+
+.texto {
+  background-color: #200035;
+  padding: 20px;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+  color: #fff; /* Melhor para contrastar no fundo roxo escuro */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
+  width: 97%;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* já centraliza tudo que for texto */
+  gap: 140px;
+}
+
+.texto p {
+  font-size: 1rem;
+  width: 500px;
+  margin: 0; /* tira margin-bottom pra não desalinhar */
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.texto h2{
+  width: 400px;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.texto h2 {
+  display: inline-block;
+  position: relative;
+  color: #fff; /* ou a cor que quiser */
+  cursor: pointer;
+}
+
+.texto h2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ff6600; /* cor da linha */
+  transition: width 0.4s ease; /* duração e suavidade */
+}
+
+.texto h2:hover::after {
+  width: 100%;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+
+
+input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+l .nav-bar {
+  background: linear-gradient(-90deg, #84cf6a, #16c0b0);
+  height: 60px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.57);
+}
+
+.out-of-stock-img {
+  opacity: 0.5
+}
+
+p {
+  font-size: 22px;
+}
+
+.product-display {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 30px;
+  margin-left: 10vh;
+}
+
+
+
+
+img {
+  width: 600px;
+  margin: 40px;
+  padding: 15px;
+  height: auto;
+
+}
+
+.product-info {
+  margin-left: 35px;
+}
+
+.product-info h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+
+
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  width: 425px;
+  padding: 20px;
+  margin: 40px;
+  border: 2px solid #d8d8d8;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+  box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
+}
+
+.review-container {
+  width: 425px;
+  padding: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
+  box-shadow: 2px 20px -12px rgba(0, 0, 0, 0.57);
+  margin-left: 40px;
+  border: 2px solid #d8d8d8;
+}
+
+.review-container li {
+  margin-bottom: 30px;
+}
+
+.review-form .button {
+  display: block;
+  margin: 30px auto;
+}
+
+select {
+  height: 40px;
+  font-size: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+
+textarea {
+  width: 95%;
+  height: 70px;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.tabela {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.imagem-tabela {
+  width: 90vh;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .product-image,
+  .product-info {
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  .review-form {
+    width: 90%;
+  }
+}
+

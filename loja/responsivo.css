@@ -1,0 +1,118 @@
+/* RESPONSIVO.CSS - carregue SEMPRE por último, depois de style.css/styles.css/cards.css */
+*{box-sizing:border-box}
+img{max-width:100%}
+body{overflow-x:hidden}
+
+/* ---------- NAV ---------- */
+nav{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1000;
+  background:#200035;border-radius:20px;margin:20px 10px 0;padding:0 24px;height:64px;width:auto}
+.nav-list{list-style:none;display:flex;gap:18px;align-items:center}
+.nav-list li{margin:0;opacity:1;letter-spacing:1px}
+.nav-list a,.logo{color:#fff;text-decoration:none}
+.mobile-menu{display:none;cursor:pointer;position:relative;z-index:1001}
+.mobile-menu div{width:28px;height:2px;background:#fff;margin:6px;transition:.3s}
+.mobile-menu.active .line1{transform:rotate(-45deg) translate(-6px,6px)}
+.mobile-menu.active .line2{opacity:0}
+.mobile-menu.active .line3{transform:rotate(45deg) translate(-6px,-6px)}
+@media(max-width:1100px){
+  nav{width:auto;height:64px;margin-left:10px}
+  .mobile-menu{display:block}
+  .nav-list{position:fixed;top:0;right:0;width:70vw;max-width:300px;height:100vh;background:#200035;
+    flex-direction:column;justify-content:center;gap:28px;border-radius:40px 0 0 40px;
+    transform:translateX(105%);transition:transform .3s ease-in;backdrop-filter:none;z-index:999}
+  .nav-list.active{transform:none}
+  .nav-list li{opacity:1;margin:0}
+}
+
+/* ---------- PÁGINA DE CARDS ---------- */
+.container{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;
+  max-width:1200px;margin:30px auto;padding:0 20px}
+.item{width:auto;max-width:none;margin:0}
+.item .icons{position:absolute;top:12px;right:14px;left:auto;display:flex;gap:10px}
+.item .icons i{margin:0!important;color:#707070;font-size:1.3rem}
+.item .icons i.fa-solid.fa-heart{color:#e0245e}
+.item .imagem-item{margin-top:30px;width:auto;margin-left:0}
+.container img,.imagem-produto{margin:0!important;padding:0;width:100%;height:auto}
+.informacoes h1{margin-top:10px;font-size:1.1rem}
+.preco{margin-left:0}
+
+/* ---------- PÁGINA DE PRODUTO ---------- */
+.cart{float:none;margin:20px 20px 0 auto;width:auto;padding:0 16px;display:flex;align-items:center;justify-content:center}
+.cart a{color:#200035;text-decoration:none}
+.cart p{margin:0;width:auto;font-size:1rem}
+.product-display{padding:1rem;clear:both}
+.product-container{max-width:1100px;margin:20px auto;padding:0 20px;gap:32px;align-items:center;flex-direction:row}
+.product-container>img{width:min(45%,480px);margin:0;padding:0}
+.product-info{margin:0;flex:1;min-width:0}
+.product-info h1{margin-top:0}
+.fav-btn{background:none;border:none;font-size:1.6rem;cursor:pointer;color:#200035;margin-top:16px}
+.fav-btn.ativo{color:#e0245e}
+.botoes-compra{flex-wrap:wrap}
+.botoes-compra button{flex:1 1 180px;width:auto;cursor:pointer}
+.texto{flex-direction:column;height:auto;gap:20px;padding:40px 20px;width:100%;margin-top:30px}
+.texto h2,.texto p{width:100%;max-width:520px}
+p{font-size:clamp(15px,2.2vw,20px)}
+@media(max-width:800px){
+  .product-container{flex-direction:column;text-align:center}
+  .product-container>img{width:100%;max-width:420px}
+  .botoes-compra{justify-content:center}
+}
+
+/* ---------- CARRINHO ---------- */
+.titulo{text-align:center;margin:30px 16px 10px;font-size:1.6rem}
+.main-section{height:auto;background:none;max-width:900px;margin:20px auto;padding:0 16px;display:block}
+.cart-table{width:100%;border-collapse:collapse}
+.cart-table td{padding:12px 8px;vertical-align:middle}
+.cart-table tr{border-bottom:1px solid #e3e3e3}
+.product-identification{display:flex;align-items:center;gap:12px}
+.cart-product-image,.product-image{width:80px;height:80px;object-fit:cover;margin:0;padding:0;border-radius:8px}
+.product-qtd-input{width:70px;margin:0 8px 0 0;height:36px}
+.remove-product-button,.purchase-button,.product-info button,#clear-favorites-button{
+  background:#200035;color:#fff;border:none;border-radius:10px;padding:10px 16px;cursor:pointer;font-family:inherit}
+.remove-product-button:hover,.purchase-button:hover,.product-info button:hover{background:#3E2C5B}
+.cart-total-container{text-align:right;font-size:1.2rem;border:none}
+.purchase-button{display:block;margin:20px 0 20px auto;width:100%;max-width:260px}
+@media(max-width:600px){
+  .cart-table,.cart-table tbody,.cart-table tfoot,.cart-table tr,.cart-table td{display:block}
+  .cart-table tr{padding:12px 0}
+  .cart-table td{padding:6px 0}
+  .purchase-button{max-width:none}
+}
+
+/* ---------- FAVORITOS ---------- */
+.product-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.product{display:flex;flex-direction:column;align-items:center;text-align:center;padding:16px;border-radius:20px;box-shadow:0 5px 10px rgba(0,0,0,.2)}
+.product .product-image{width:100%;height:auto;max-width:220px}
+.product .product-info{margin:0}
+.product .product-info p{margin-top:8px}
+.product .product-info button{margin:8px 4px 0}
+.favoritos-total-container{text-align:right;margin:20px 0;font-size:1.2rem}
+.favoritos-actions{text-align:right;margin-bottom:30px}
+
+/* ---------- RODAPÉ SEMPRE NO FINAL DA PÁGINA ---------- */
+body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+main{flex:1 0 auto;height:auto;min-height:0;padding-bottom:60px}
+.main-section{width:100%}
+#app{margin-bottom:40px}
+footer,.footer,.footer-emocao,.footer-ecobag-caneca{margin-top:auto!important;width:100%!important;flex-shrink:0}
+.footer-col{width:25%}
+@media(max-width:767px){.footer-col{width:50%}}
+@media(max-width:574px){.footer-col{width:100%}}
+
+/* ---------- LISTAGEM (almofada, alegria...) ---------- */
+.principal{margin:30px 16px 0;text-align:center}
+.principal h1{font-size:clamp(1.4rem,4vw,2rem)}
+.product-price{margin:8px 0 0!important}
+.star-compra{display:flex;gap:3px}
+.botao button{cursor:pointer}
+.botao button a{color:#fff;display:block;height:100%;line-height:40px}
+@media(max-width:480px){
+  .container{grid-template-columns:1fr;padding:0 16px}
+  .footer-emocao,.footer{padding:40px 0}
+}
+
+/* ---------- Botões F / M ---------- */
+.sexo-options{flex-wrap:wrap}
+.sexo-options span{cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
+.sexo-options span.ativo{background-color:#200035e2;color:#fff}
+.sexo-options span.ativo p{color:#fff}

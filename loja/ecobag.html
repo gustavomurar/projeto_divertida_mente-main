@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divertidamente</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cards.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="responsivo.css" />
+  <script src="loja.js" defer></script>
+  <script src="mobile-navbar.js" defer></script>
+</head>
+<body>
+<header>
+  <nav>
+    <a class="logo" href="/">DIVERTIDAMENTE</a>
+    <div class="mobile-menu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-list">
+        <li><a href="../home2.html">Início</a></li>
+        <li><a href="camisa.html">Camisa</a></li>
+        <li><a href="moletom.html">Moletom</a></li>
+        <li><a href="ecobag.html">Ecobag</a></li>
+        <li><a href="almofada.html">Almofada</a></li>
+        <li><a href="caneca.html">Caneca</a></li>
+        <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a href="favoritos.html"><i class="fa-solid fa-heart"></i></a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <div class="principal">
+      <h1>ECOBAG</h1>
+    </div>
+    <div class="container">
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="ECOBAG/imagens/ECOBAG alegria.png" alt="ECOBAG Alegria" class="imagem-produto"/>
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Ecobag Alegria', 'ECOBAG/imagens/ECOBAG alegria.png', 'R$34,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Ecobag Alegria" onclick="favoritar('Ecobag Alegria', 'ECOBAG/imagens/ECOBAG alegria.png', 'R$34,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Alegria</h1>
+          <p>ECOBAG Alegria.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="sexo-preco-container">
+          </div>
+          <div class="product-price">R$34,90</div>
+          <div class="botao">
+            <button><a href="ECOBAG/alegria.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="ECOBAG/imagens/ECOBAG ansiedade.png" alt="ECOBAG Ansiedade" class="imagem-produto"
+            data-original="ECOBAG/imagens/ECOBAG ansiedade.png" data-m="ECOBAG/imagens/ECOBAG-f-ansiedade.png" data-h="ECOBAG/imagens/ECOBAG-m-ansiedade.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Ecobag Ansiedade', 'ECOBAG/imagens/ECOBAG ansiedade.png', 'R$34,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Ecobag Ansiedade" onclick="favoritar('Ecobag Ansiedade', 'ECOBAG/imagens/ECOBAG ansiedade.png', 'R$34,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Ansiedade</h1>
+          <p>ECOBAG Ansiedade.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+
+          <div class="product-price">R$34,90</div>
+          <div class="botao">
+            <button><a href="ECOBAG/ansiedade.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="ECOBAG/imagens/ECOBAG inveja.png" alt="ECOBAG Inveja" class="imagem-produto"
+            data-original="ECOBAG/imagens/ECOBAG inveja.png" data-m="ECOBAG/imagens/ECOBAG-f-inveja.png" data-h="ECOBAG/imagens/ECOBAG-m-inveja.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Ecobag Inveja', 'ECOBAG/imagens/ECOBAG inveja.png', 'R$34,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Ecobag Inveja" onclick="favoritar('Ecobag Inveja', 'ECOBAG/imagens/ECOBAG inveja.png', 'R$34,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Inveja</h1>
+          <p>ECOBAG Inveja.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+
+          <div class="product-price">R$34,90</div>
+          <div class="botao">
+            <button><a href="ECOBAG/inveja.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="ECOBAG/imagens/ECOBAG medo.png" alt="ECOBAG Medo" class="imagem-produto"
+            data-original="ECOBAG/imagens/ECOBAG medo.png" data-m="ECOBAG/imagens/ECOBAG-f-medo.png" data-h="ECOBAG/imagens/ECOBAG-m-medo.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Ecobag Medo', 'ECOBAG/imagens/ECOBAG medo.png', 'R$34,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Ecobag Medo" onclick="favoritar('Ecobag Medo', 'ECOBAG/imagens/ECOBAG medo.png', 'R$34,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Medo</h1>
+          <p>ECOBAG Medo.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+
+          <div class="product-price">R$34,90</div>
+          <div class="botao">
+            <button><a href="ECOBAG/medo.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="ECOBAG/imagens/ECOBAG nojo.png" alt="ECOBAG Nojo" class="imagem-produto"
+            data-original="ECOBAG/imagens/ECOBAG nojo.png" data-m="ECOBAG/imagens/ECOBAG-f-nojo.png" data-h="ECOBAG/imagens/ECOBAG-m-nojo.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Ecobag Nojo', 'ECOBAG/imagens/ECOBAG nojo.png', 'R$34,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Ecobag Nojo" onclick="favoritar('Ecobag Nojo', 'ECOBAG/imagens/ECOBAG nojo.png', 'R$34,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Nojo</h1>
+          <p>ECOBAG Nojo.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+
+          <div class="product-price">R$34,90</div>
+          <div class="botao">
+            <button><a href="ECOBAG/nojo.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="ECOBAG/imagens/ECOBAG raiva.png" alt="ECOBAG Raiva" class="imagem-produto"
+            data-original="ECOBAG/imagens/ECOBAG raiva.png" data-m="ECOBAG/imagens/ECOBAG-f-raiva.png" data-h="ECOBAG/imagens/ECOBAG-m-raiva.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Ecobag Raiva', 'ECOBAG/imagens/ECOBAG raiva.png', 'R$34,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Ecobag Raiva" onclick="favoritar('Ecobag Raiva', 'ECOBAG/imagens/ECOBAG raiva.png', 'R$34,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Raiva</h1>
+          <p>ECOBAG Raiva.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+
+          <div class="product-price">R$34,90</div>
+          <div class="botao">
+            <button><a href="ECOBAG/raiva.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="ECOBAG/imagens/ECOBAG tedio.png" alt="ECOBAG Tédio" class="imagem-produto"
+            data-original="ECOBAG/imagens/ECOBAG tedio.png" data-m="ECOBAG/imagens/ECOBAG-f-tedio.png" data-h="ECOBAG/imagens/ECOBAG-m-tedio.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Ecobag Tédio', 'ECOBAG/imagens/ECOBAG tedio.png', 'R$34,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Ecobag Tédio" onclick="favoritar('Ecobag Tédio', 'ECOBAG/imagens/ECOBAG tedio.png', 'R$34,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Tédio</h1>
+          <p>ECOBAG Tédio.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+
+          <div class="product-price">R$34,90</div>
+          <div class="botao">
+            <button><a href="ECOBAG/tedio.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="ECOBAG/imagens/ECOBAG tristeza.png" alt="ECOBAG Tristeza" class="imagem-produto"
+            data-original="ECOBAG/imagens/ECOBAG tristeza.png" data-m="ECOBAG/imagens/ECOBAG-f-tristeza.png" data-h="ECOBAG/imagens/ECOBAG-m-tristeza.png" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Ecobag Tristeza', 'ECOBAG/imagens/ECOBAG tristeza.png', 'R$34,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Ecobag Tristeza" onclick="favoritar('Ecobag Tristeza', 'ECOBAG/imagens/ECOBAG tristeza.png', 'R$34,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Tristeza</h1>
+          <p>ECOBAG Tristeza.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+
+          <div class="product-price">R$34,90</div>
+          <div class="botao">
+            <button><a href="ECOBAG/tristeza.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="ECOBAG/imagens/ECOBAG vergonha.png" alt="ECOBAG Vergonha" class="imagem-produto" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Ecobag Vergonha', 'ECOBAG/imagens/ECOBAG vergonha.png', 'R$34,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Ecobag Vergonha" onclick="favoritar('Ecobag Vergonha', 'ECOBAG/imagens/ECOBAG vergonha.png', 'R$34,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Vergonha</h1>
+          <p>ECOBAG Vergonha.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+
+          <div class="product-price">R$34,90</div>
+          <div class="botao">
+            <button><a href="ECOBAG/vergonha.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="imagem-item">
+          <img src="ECOBAG/imagens/ECOBAG emoções.png" alt="ECOBAG Emoções" class="imagem-produto" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Ecobag Emoções', 'ECOBAG/imagens/ECOBAG emoções.png', 'R$34,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Ecobag Emoções" onclick="favoritar('Ecobag Emoções', 'ECOBAG/imagens/ECOBAG emoções.png', 'R$34,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Emoções</h1>
+          <p>ECOBAG Emoções.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+
+          <div class="product-price">R$34,90</div>
+          <div class="botao">
+            <button><a href="ECOBAG/todos.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="item">
+        <div class="imagem-item">
+          <img src="ECOBAG/imagens/ECOBAG bigbong.png" alt="ECOBAG Bing Bong" class="imagem-produto" />
+          <div class="icons">
+            <i class="fa-solid fa-bag-shopping" title="Adicionar ao carrinho" onclick="adicionarCarrinho('Ecobag Bing Bong', 'ECOBAG/imagens/ECOBAG bigbong.png', 'R$34,90')"></i>
+            <i class="fa-regular fa-heart" title="Favoritar" data-nome="Ecobag Bing Bong" onclick="favoritar('Ecobag Bing Bong', 'ECOBAG/imagens/ECOBAG bigbong.png', 'R$34,90', this)"></i>
+          </div>
+        </div>
+        <div class="informacoes">
+          <h1>Bing Bong</h1>
+          <p>ECOBAG Bing Bong.</p>
+          <div class="star-compra">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+
+          <div class="product-price">R$34,90</div>
+          <div class="botao">
+            <button><a href="ECOBAG/bingbong.html">
+              Mais
+            </a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer class="footer-emocao">
+    <div class="container-footer">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="#">Telefone: (00) 00000-0000</a></li>
+                    <li><a href="#">Fulano@gmail.com</a></li>
+
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Endereço</h4>
+                <ul>
+                    <li><a href="#">Joinville-SC</a></li>
+                    <li><a href="#">bairro fulano 00, Rua detal</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contribuidores</h4>
+                <ul>
+                    <li><a href="#">Maria Helena</a></li>
+                    <li><a href="#">Gustavo</a></li>
+
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Nos siga</h4>
+                <div class="social-links">
+                    <ul>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

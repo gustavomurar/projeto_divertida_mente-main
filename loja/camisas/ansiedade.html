@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--VUE CDN-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+    <title class="titulo">Camisa P Ansiedade</title>
+
+    <div id="app">
+        <div class="cart">
+            <p>Cart: {{ cart }}</p>
+        </div>
+        <div class="product-display">
+            <div class="product-container">
+                <!-- IMAGEM DO PRODUTO-->
+                <img :src="image" alt="img-product">
+                <div class="product-info">
+
+                    <!--INFO DO PRODUTO-->
+                    <h1>{{ product_title + " " + brand }}</h1>
+                    <p v-if="inStock > 10">Em estoque
+
+                    </p>
+
+                    <p v-else-if="inStock < 10 && inStock > 1">Quase fora</p>
+                    <p v-else>Fora de estoque</p>                        <p>As camisetas são feitas em 100% algodão fio 30.1, proporcionando conforto, maciez e durabilidade. Cada estampa é aplicada com tecnologia de ponta, garantindo um visual exclusivo. Modelagem moderna e ajuste perfeito. Produção sob demanda, envio em 15 a 20 dias úteis (mais o prazo da transportadora). Vista autenticidade com qualidade superior!</p>
+                    <ul>
+                        <li v-for="detail in details">
+                            {{ detail }}
+                        </li>
+                    </ul>
+                       <div class="tamanho"><h4>Tamanho:</h4></div> 
+                    <!-- Seção de Tamanho -->
+                    <div class="sizes">
+
+                        <button class="size-button">PP</button>
+                        <button class="size-button">P</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">G</button>
+                        <button class="size-button">2G</button>
+
+                    </div>
+
+                    <div v-for="variant in variants" :key="variant.id" @mouseover="changeImage(variant.image)"
+                        class="gender-circle">
+                        {{ variant.gender }}
+                    </div>
+                    <div class="preco"><h1>R$ 49,90</h1></div>
+                    <div class="botoes-compra">
+                        <button class="botao-compra">Comprar</button>
+                        <button class="button" :class="{ disabledButton: inStock < 1 }" @click="addToCart"
+                            :disabled="inStock < 1">Adicionar Ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="texto">
+        <div data-aos="fade-up"
+        data-aos-duration="1000" class="texto-h2"><h2>Mais sobre nossos produtos...</h2></div>
+
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000" class="texto-p">
+
+            <p>As camisetas são feitas em 100% algodão fio 30.1, proporcionando conforto, maciez e durabilidade. Cada estampa é aplicada com tecnologia de ponta, garantindo um visual exclusivo. Modelagem moderna e ajuste perfeito. Produção sob demanda, envio em 15 a 20 dias úteis (mais o prazo da transportadora). Vista autenticidade com qualidade superior!</p>
+        </div>
+    </div>
+
+    <div class="tabela">
+        <img src="imagens/tabela.png" alt="tabela" class="imagem-tabela">
+    </div>
+
+
+    
+    
+    <script>
+        const { createApp, ref } = Vue
+
+        createApp({
+            setup() {
+                const cart = ref(0);
+                const addToCart = () => {
+                    cart.value += 1
+                }
+                const image = ref("imagens/camisa-ansiedade.png");
+                const changeImage = (variantImage) => {
+                    image.value = variantImage
+                }
+                return {
+                    product_title: ref('Camisa Preta'),
+                    brand: 'Ansiedade',
+                    image,
+                    inStock: ref(50),
+                    details: ['100% algodão', '0% poliéster', '0% lã'],
+                    variants: [
+                        { id: 1, gender: 'F', image: "imagens/camisa-f-ansiedade.png" },
+                        { id: 2, gender: 'M', image: "imagens/camisa-m-ansiedade.png" }
+                    ],
+                    cart,
+                    addToCart,
+                    changeImage
+                }
+            }
+        }).mount('#app')
+    </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+<script>
+    function mudarSexo(elemento, sexo) {
+        const img = elemento.closest(".item").querySelector("img");
+        img.src = img.dataset[sexo];
+    }
+
+    function restaurarImagem(elemento) {
+        const img = elemento.closest(".item").querySelector("img");
+        img.src = img.dataset.original;
+    }
+</script>
+
+</html>

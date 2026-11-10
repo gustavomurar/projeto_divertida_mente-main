@@ -1,0 +1,1210 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Rock+Salt&display=swap');
+
+* {
+  margin: 0;
+
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+}
+
+.imagem-1 {
+  width: 100%;
+  height: 105vh;
+  margin-top: 40px;
+}
+
+
+.imagem-2,
+.imagem-3 {
+  position: absolute;
+  /* Para ficarem em cima da imagem-1 */
+}
+
+.imagem-2 {
+  width: 670px;
+  margin-left: 430px;
+  margin-top: -30px;
+  animation: animation1 3s forwards;
+  animation-delay: 1s;
+  /* Espera 2 segundos para começar */
+
+}
+
+.imagem-3 {
+  width: 800px;
+  margin-left: 450px;
+  animation: animation2 3s forwards;
+  /* 2s = duração, forwards = mantém na posição final depois da animação */
+  animation-delay: 1s;
+  /* Espera 2 segundos para começar */
+  top: 80px;
+  /* <-- substitui o margin-top */
+}
+
+.circulos {
+  display: flex;
+  flex-wrap: wrap; /* Opcional: deixa as imagens quebrarem linha se a tela for pequena */
+  justify-content: center; /* Centraliza as imagens no meio */
+  gap: 10px; /* Espaço entre as imagens */
+  margin: 20px 0; /* Espaçamento em cima e embaixo */
+}
+
+.imagem-circuloemocao {
+  width: 110px; /* Ou o tamanho que você quiser para as imagens */
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%; /* Deixa a imagem redonda se não estiver já */
+}
+.lancamentos{
+  text-align: center;
+  color: #202020;
+  font-size: 20px;
+}
+@keyframes animation1 {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: translateX(-320px);
+    /* Deslocamento para a direita */
+  }
+
+  100% {
+    transform: translateX(-320px);
+  }
+}
+
+@keyframes animation2 {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: translateX(270px);
+    /* Deslocamento para a direita */
+  }
+
+  100% {
+    transform: translateX(270px);
+  }
+}
+
+
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    /* Depois da animação, fica visível */
+  }
+}
+
+
+
+nav {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  background-color: transparent;
+  height: 8vh;
+  margin-top: 30px;
+  z-index: 1;
+  opacity: 0;
+  /* Começa invisível */
+  animation: aparecer 1s forwards;
+  animation-delay: 1s;
+  /* Espera 2 segundos para começar */
+
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin-left: 55vh;
+}
+
+
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #f5f3f3de;
+
+}
+
+.nav-list i {
+  font-size: 1.2rem;
+}
+
+.nav-list a:hover {
+  opacity: 0.7;
+  transition: 1s ease;  
+}
+
+.logo {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #f5f3f3de;
+  font-weight: 300;
+}
+
+.descricao-inicio {
+  position: absolute;
+  margin-top: 70vh;
+  margin-left: 10vh;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes descer {
+  0% {
+    transform: translateY(-40px);
+    /* Inicia acima da tela */
+    opacity: 0;
+    /* Começa invisível */
+  }
+
+  100% {
+    transform: translateY(0);
+    /* Vai para a posição original */
+    opacity: 1;
+    /* Fica visível */
+  }
+}
+
+
+@keyframes moverLado {
+  0% {
+    transform: translateX(-40px);
+    /* Inicia fora da tela, à esquerda */
+    opacity: 0;
+    /* Começa invisível */
+  }
+
+  100% {
+    transform: translateX(0);
+    /* Vai para a posição original */
+    opacity: 1;
+    /* Fica visível */
+  }
+}
+
+
+.botoes {
+  display: flex;
+  margin-top: 30px;
+  gap: 5px;
+  animation: moverLado 1s ease-in-out forwards;
+  /* Aplica a animação */
+  animation-delay: 0.8s;
+  /* Espera 2 segundos para começar */
+  opacity: 0;
+  /* Começa invisível */
+
+
+}
+
+.botao1 {
+  border: 2px solid rgb(255, 255, 255);
+  width: 180px;
+  background: rgb(255, 255, 255);
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+
+
+}
+
+.botoes button:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+.botao2 {
+  border: 1px solid rgb(255, 255, 255);
+  background: transparent;
+  width: 180px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+
+
+}
+
+.descricao-inicio p {
+  width: 570px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  animation: descer 1s ease-in-out forwards;
+  /* Aplica a animação */
+  animation-delay: 0.8s;
+  /* Espera 2 segundos para começar */
+  opacity: 0;
+  /* Começa invisível */
+
+}
+
+
+
+.item {
+  position: absolute;
+  height: 430px;
+  text-align: justify;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.5s;
+  left: calc(50% - 110px);
+  top: 0;
+  max-width: 355px;
+  width: 30vh;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px 30px 30px;
+}
+
+
+
+.slider {
+  position: relative;
+  width: 80%;
+  height: 490px;
+  overflow: hidden;
+  margin-top: 80px;
+  margin-left: 20vh;
+}
+
+
+
+#next,|
+#prev {
+  position: absolute;
+  /* Garante que os botões fiquem posicionados dentro da 'slider' */
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  font-size: xxx-large;
+  font-family: monospace;
+  font-weight: bold;
+  top: 50%;
+  /* Centraliza verticalmente */
+  transform: translateY(-50%);
+  /* Ajuste preciso de centralização */
+  z-index: 2;
+  /* Garante que os botões fiquem acima dos outros elementos */
+}
+
+#next {
+  right: 0;
+  /* Posiciona o botão à direita */
+}
+
+#prev {
+  left: 0;
+  /* Posiciona o botão à esquerda */
+}
+
+
+
+
+
+.icons {
+  display: grid;
+  grid-template-columns: 20px 20px;
+  gap: 10px;
+}
+
+.item .icons i {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #707070;
+  margin-left: 25vh;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.item .icons i:hover {
+  color: #333;
+  transition: color 0.6s ease;
+
+}
+
+.container img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  object-fit: cover;
+  margin-top: -30px;
+}
+
+.informacoes h1 {
+  margin-top: -20px;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.informacoes p {
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.star {
+  display: grid;
+  grid-template-columns: 15px 15px 15px 15px 15px;
+}
+
+.preco {
+  font-weight: 600;
+  color: #333333d7;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.star i {
+  font-size: 0.8rem;
+  color: #FCD635;
+  margin-top: 5px;
+}
+
+.cores-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cores-container h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cores-circulos {
+  display: flex;
+  gap: 10px;
+}
+
+.circulo-branco,
+.circulo-preto {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.circulo-branco:hover {
+  transform: scale(1.05);
+
+}
+
+.circulo-preto:hover {
+  transform: scale(1.05);
+}
+
+.circulo-branco {
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.circulo-preto {
+  background-color: #000;
+
+}
+
+.botao button {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  background: #200035;
+  border-radius: 25px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.botao button:hover {
+  background: #3E2C5B;
+  transition: 1s;
+}
+
+.botao button a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+}
+
+
+.slider img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: -30px;
+}
+
+
+/*FOOTER-inicio*/
+
+.footer {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-color: #200035;
+  width: 101%;
+  padding: 70px 0;
+  margin-left: 0;
+  margin-top: 10vh;
+}
+
+.container-footer {
+  max-width: 1170px;
+  margin: auto;
+  line-height: 1.5;
+}
+
+.footer-col {
+  width: 19%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #3E2C5B;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #35373c;
+  background-color: #ffffff;
+}
+
+.container-footer ul {
+  list-style: none;
+}
+
+.social-links i {
+  color: #000;
+}
+
+/*responsive*/
+
+@media(max-width:767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width:574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/*FOOTER-final*/
+
+/* Container com sexo e preço lado a lado */
+.sexo-preco-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding: 0 0px;
+  width: 100%;
+}
+
+/* Alinhamento de Nome e Sexo */
+.sexo-preco-container .product-title,
+.sexo-options {
+  text-align: left;
+  flex: 1;
+}
+
+/* Opções de sexo com quadrado */
+
+.sexo-options span {
+  display: inline-block;
+  padding: 2px 6px;
+  width: 30px;
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 8px;
+  background-color: #f0f0f0;
+  border-radius: 70px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  font-size: 10px;
+}
+
+.sexo-options span p {
+  text-align: center;
+  margin-top: -2px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #000000;
+
+}
+
+.sexo-options {
+  display: flex;
+
+}
+
+.sexo-options h2 {
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+.sexo-options span:hover {
+  background: #3E2C5B;
+  transition: 1s;
+  color: white;
+}
+
+.sexo-options p:hover {
+  color: #f0f0f0;
+}
+
+
+/* Ícones sempre visíveis */
+.icons {
+  position: absolute;
+  top: 7px;
+
+  gap: 10px;
+  transition: opacity 0.3s ease;
+  margin-top: 10px;
+}
+
+.item:hover .icons {
+  opacity: 1;
+  /* Opacidade aumenta no hover */
+}
+
+/* Ícones de carrinho e favorito com hover suave */
+.icons i {
+  font-size: 20px;
+  color: #888;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons i:hover {
+  color: var(--blue);
+  /* Mudança suave de cor */
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-top: 30px;
+}
+
+.informacoes {
+  margin-top: 25px;
+}
+
+.product-price {
+  font-weight: 600;
+  color: #333333d7;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+
+.star {
+  display: grid;
+  grid-template-columns: 15px 15px 15px 15px 15px;
+}
+
+.star-compra {
+  display: flex;
+  gap: 2px;
+}
+
+.star-compra i {
+  font-size: 0.8rem;
+  color: #FCD635;
+  margin-top: 5px;
+}
+
+
+.item-descricao2 p {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #f0f0f0;
+  font-weight: 200;
+}
+
+
+.item-descricao2 h1 {
+  font-size: 3rem;
+  color: #f0f0f0;
+}
+
+
+.item-descricao1 {
+  height: 300px;
+  /* ou defina uma altura se quiser */
+  margin-left: 350px;
+}
+
+.item-descricao2 {
+  margin-left: 150px;
+  width: 600px;
+  margin-top: 50px;
+}
+
+.descricao-detalhada button {
+  width: 200px;
+  height: 30px;
+  margin-top: 30px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  color: #362D73;
+}
+
+.descricao-detalhada button:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+
+.descricao-detalhada {
+  display: grid;
+  grid-template-columns: 400px 700px;
+  margin: auto;
+  margin-top: 40px;
+  gap: 50px;
+  background-color: #362D73;
+  width: 180vh;
+  border-radius: 10px;
+  height: 70vh;
+}
+
+.item-descricao1 img {
+  height: 420px;
+  width: 370px;
+  margin-top: 35px;
+  border-radius: 10px;
+}
+
+
+.container-anuncio {
+  display: grid;
+  margin-top: 50px;
+  grid-template-areas:
+    'anuncio1 anuncio2 anuncio3'
+    'anuncio4 anuncio4 anuncio5';
+  margin-left: 200px;
+  justify-content: center;
+  gap: 10px;
+  grid-template-columns: 280px 280px 450px;
+  /* tamanho das colunas */
+
+}
+
+/* anuncio1 e anuncio2: MESMO TAMANHO */
+.anuncio1,
+.anuncio2 {
+  width: 280px;
+  height: 350px;
+  border-radius: 10px;
+
+}
+
+.anuncio1 {
+  background-image: url('loja/images/anuncio-homem.webp');
+  grid-area: anuncio1;
+  background-size: cover;
+  /* ou 'contain' dependendo do efeito desejado */
+  background-position: center;
+  /* centraliza a imagem */
+  background-repeat: no-repeat;
+  /* impede a repetição da imagem */
+}
+
+.anuncio2 {
+  grid-area: anuncio2;
+  background-image: url('loja/images/anuncio-homem2.jpeg');
+  background-size: cover;
+  /* ou 'contain' dependendo do efeito desejado */
+  background-position: center;
+  /* centraliza a imagem */
+  background-repeat: no-repeat;
+  /* impede a repetição da imagem */
+}
+
+/* anuncio3: MENOR que 1 e 2 */
+.anuncio3 {
+  grid-area: anuncio3;
+  height: 180px;
+  border-radius: 10px;
+  background-image: url('loja/images/anuncio1.png');
+  background-size: cover;
+  /* ou 'contain' dependendo do efeito desejado */
+  background-position: center;
+  /* centraliza a imagem */
+  background-repeat: no-repeat;
+  /* impede a repetição da imagem */
+
+}
+
+/* anuncio4: MENOR que 3 */
+.anuncio4 {
+  background-color: #362D73;
+  grid-area: anuncio4;
+  grid-column: span 2;
+  /* ocupa 2 colunas */
+  height: 80px;
+  /* mais baixo que anuncio3 */
+  border-radius: 10px;
+}
+
+
+
+.area-cards-simples {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  
+  margin: 40px 0;
+}
+
+.card-simples:hover{
+    transform: scale(1.02);
+    transition: 0.5s ease;
+  
+  
+}
+
+.card-simples {
+  width: 200px;
+  text-align: center;
+  transition: 0.5s ease;
+
+}
+
+.card-simples img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-simples h2 {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.lancamentos h1 {
+  margin-bottom: -50px;
+}
+.cincoprotudos {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* anuncio5: MAIOR que 4 */
+.anuncio5 {
+  grid-area: anuncio5;
+  width: 200px;
+  margin-top: -170px;
+  height: 250px;
+  /* mais alto que anuncio4 */
+  width: 450px;
+  border-radius: 10px;
+  background-image: url('loja/images/anuncio2.png');
+  background-size: cover;
+  /* ou 'contain' dependendo do efeito desejado */
+  background-position: center;
+  /* centraliza a imagem */
+  background-repeat: no-repeat;
+  /* impede a repetição da imagem */
+
+}
+
+.anuncio4 button{
+  width: 170px;
+  height: 30px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 50px;
+  margin-left: 60px;
+  font-size: 0.9rem;
+  color: #362D73;
+}
+
+
+.anuncio4 button:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+
+.descricao-anuncio4{
+  display: flex;
+}
+
+.descricao-anuncio4 p{
+  width: 300px;
+  font-size: 0.8rem;
+  color: #f0f0f0;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.informacoes-anuncio{
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  margin-left: 27vh;
+  margin-top: 30px;
+}
+
+.info-anuncio{
+  display: flex;
+gap: 20px;
+}
+
+.info-anuncio i{
+  font-size: 1.2rem;
+}
+
+.info-anuncio p{
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.linha1{
+  height: 0.5px;
+  width: 170vh;
+  background-color: #35373c83;
+  margin-top: 35px;
+  margin-left: 160px;
+
+}
+
+.linha2{
+  height: 0.6px;
+  width: 170vh;
+  background-color: #35373c83;
+  margin-top: 35px;
+  margin-left: 160px;
+
+}
+
+
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  height: 8vh;
+  width: 46vh;
+  margin-left: 70px;
+}
+
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+ 
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #200035;
+    height: 8vh;
+    width: 46vh;
+    margin-left: 0;
+
+  }
+
+  .nav-list{
+    margin-left: 0;
+  }
+
+  .item{
+    display: none;
+
+  }
+
+  
+#next,
+#prev{
+  display: none;
+}
+
+  .descricao-detalhada {
+    display: block; /* ou flex, ou none, dependendo do que você quer */
+    gap: 50px;
+    margin-top: -65vh;
+    margin-left: 5px;
+    background-color: #362D73;
+    width: 44vh;
+    border-radius: 10px;
+    height: 65vh;
+  }
+  
+  .area-cards-simples{
+    display: grid;
+    grid-template-columns: 170px 100px ;
+    width: 100%;
+    margin-left: -50px;
+  }
+  
+
+  .informacoes-anuncio{
+    display: none;
+  }
+
+  .linha1, .linha2{
+    display: none;
+  }
+
+  .detalhes{
+    display: none;
+    
+  }
+
+
+  .imagem-circuloemocao{
+    width: 70px;
+    height: 70px;
+  }
+
+  .lancamentos{
+    display: none;
+  }
+
+  .descricao-detalhada button {
+    width: 350px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: -120px;
+    border: none;
+    font-size: 1rem;
+    color: #362D73;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  
+  .descricao-detalhada button:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+   
+  }
+
+  .descricao-detalhada h1{
+    margin-left: -120px;
+    width: 40vh;
+  }
+
+  .item-descricao2 p{
+    margin-left: -120px;
+    width: 35vh;
+  }
+
+
+  
+
+  .imagem-1 {
+    width: 100%;
+    height: 96vh;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .imagem-2 {
+    width: 90%;
+    margin-left: 2%;
+    top: 60px;
+  }
+
+  .imagem-3 {
+    width: 90%;
+    margin-left: 2%;
+    top:340px;
+  }
+
+  .imagem-2,
+  .imagem-3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centraliza horizontalmente */
+  } 
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: -1px;
+    width: 50vw;
+    height: 92vh;
+    background: #200035;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(120%);
+    transition: transform 0.3s ease-in;
+    border-radius: 0 0 0 40px;
+
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+
+  .descricao-inicio {
+    position: absolute;
+    margin-left: 5%;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .descricao-inicio p {
+    width: 40vh;
+    margin-top: 30px;
+  }
+}
+
+
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@media (max-width: 999px) {
+  img {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,250 @@
+/* Posiciona o ícone dentro do card e em cima da imagem */
+.item {
+  position: relative;
+  /* Faz com que o ícone seja posicionado em relação ao card */
+}
+
+.icons {
+  position: absolute;
+  top: 10px;
+  /* Ajusta a posição para que o ícone fique no topo do card */
+  right: 200px;
+  /* Fica no canto superior direito */
+  z-index: 10;
+  color: black;
+}
+
+.icons i {
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.icons i:hover {
+  color: #f39c12;
+}
+
+.imagem-item {
+  margin-top: 50px;
+  /* Ajuste para afastar a imagem do topo, se necessário */
+}
+
+.imagem-produto {
+  width: 100%;
+  height: auto;
+  transition: 0.3s;
+}
+
+
+
+.informacoes {
+  margin-top: 25px;
+}
+
+.sexo-options {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.sexo-options span {
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 30px;
+  /* Alinha o texto verticalmente (mesma altura do círculo) */
+  vertical-align: middle;
+  transition: 0.7s ease;
+
+}
+
+.sexo-options span:hover {
+  background-color: #200035e2;
+  transition: 0.7s ease;
+  color: #fff;
+}
+
+.sexo-options p:hover {
+  color: #fff;
+  transition: 0.7s ease;
+}
+
+.sexo-options h2 {
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: grid;
+    gap: 50px;
+  }
+
+  .item{
+    width: 250px;
+    margin-left: 60px;
+  }
+  .imagem-item {
+    margin-top: 70px;
+    width: 250px;
+    margin-left: -35px;
+    
+    /* Ajuste para afastar a imagem do topo, se necessário */
+  }
+
+  
+  .imagem-produto{
+    margin-left: -40px;
+  }
+ 
+  .icons{
+    margin-right: 50px;
+  }
+
+  .product-price{
+    margin-left: 16vh;
+  }
+}
+
+
+.footer{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-color: #200035;
+  padding: 70px 0;
+  margin-top: 360vh;
+}
+
+
+ 
+
+
+@media (max-width: 999px) {
+
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #200035;
+    height: 8vh;
+    width: 46vh;
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: 0;
+  }
+
+  
+  .footer{
+
+    margin-top:1060vh;
+  }
+
+  .nav-list{
+    margin-left: 0;
+  }
+
+  .item{
+    width: 250px;
+    margin-left: 35px;
+  }
+
+  .imagem-produto{
+    margin-right: 30px;
+  }
+
+  nav {
+    position: relative;
+    z-index: 999;
+  }
+
+  .imagem-produto {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+.item .icons i{
+ 
+    margin-left: 20vh;
+    margin-right: 0 !important;
+  
+}
+
+.product-price{
+  margin-left: 16vh;
+}
+
+
+
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: -1px;
+    width: 50vw;
+    height: 92vh;
+    background: #200035;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius:  0 0 0 40px;
+    transform: translateX(120%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+
+
+}
+
+
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@media (max-width: 999px) {
+  img {
+    animation: none !important;
+  }
+}
+
+
+
